@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/sliderFragment">
+
+    <fragment
+        android:id="@+id/sliderFragment"
+        android:name="com.world.quran.quranwithurdutranslation.fragment.SliderFragment"
+        android:label="fragment_slider"
+        tools:layout="@layout/fragment_slider" >
+        <action
+            android:id="@+id/action_sliderFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.world.quran.quranwithurdutranslation.fragment.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_viewFragment"
+            app:destination="@id/viewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewFragment"
+        android:name="com.world.quran.quranwithurdutranslation.fragment.ViewFragment"
+        android:label="fragment_view"
+        tools:layout="@layout/fragment_view" />
+</navigation>

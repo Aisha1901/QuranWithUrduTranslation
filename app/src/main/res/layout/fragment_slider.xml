@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.SliderFragment">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/image_slider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+        android:id="@+id/worm_dots_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:dotsColor="@color/green_700"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        app:dotsCornerRadius="8dp"
+        app:dotsSize="14dp"
+        app:dotsSpacing="4dp"
+        app:dotsStrokeColor="@android:color/darker_gray"
+        app:dotsStrokeWidth="2dp" />
+
+    <ImageButton
+        android:visibility="gone"
+        android:id="@+id/all_done_btn"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/continue_btn" />
+
+</RelativeLayout>
